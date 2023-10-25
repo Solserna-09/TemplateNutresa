@@ -1,0 +1,8 @@
+
+k
+java:S1192"PDefine a constant instead of duplicating this literal "boton anticipos" 6 times.(âÌ¥¯þÿÿÿÿ
+ó
+java:S1598"×This file "AnticipoUI.java" should be located in "com\cajamenor\userInterface" directory, not in "C:\Users\SQA\Desktop\Nutresa\Template\src\main\java\com.cajamenor\userInterface"(Do not use dots in directory names).(ÜÃ¥‰ýÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÃ¥‰ýÿÿÿÿ
+P
+java:S1118":Add a private constructor to hide the implicit public one.(äØõê

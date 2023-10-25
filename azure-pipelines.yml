@@ -1,0 +1,25 @@
+pool:
+  name: Default
+  demands: java
+
+steps:
+  - task: Gradle@3
+    displayName: 'gradlew build'
+    inputs:
+      gradleWrapperFile: Caja-Menor/gradlew
+      workingDirectory: Caja-Menor
+
+  - task: CopyFiles@2
+    displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+    inputs:
+      SourceFolder: '$(system.defaultworkingdirectory)'
+      Contents: |
+        **/*
+        !build
+      TargetFolder: '$(build.artifactstagingdirectory)'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifac'
+    inputs:
+      ArtifactName: ProjectTestArtifact
+
